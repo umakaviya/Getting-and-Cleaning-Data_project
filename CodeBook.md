@@ -2,7 +2,8 @@ CodeBook.md
 
 project deals with data of smartphone sensors accelerometer and gyroscope data 
 
-Data
+Data:
+
 30 Subject particpate values from 1 to 30 for test and train 
 6 activities labeled like running,walking etc.. in the y_test and y_train 
 activity_lables file has 1-6 activity labled 
@@ -17,6 +18,7 @@ features, subject, activity has to be combined using rbind for both train and te
 total dataset has combined rows of around 10,200 observations using rbind
 
 steps:
+
 independent_tidy_data - the my final dataset name which is uploaded  dim =180 x 81 
 import the all required train and test and file which contain label
 add names for the test and train data for 561 features  
@@ -29,13 +31,6 @@ add a new column to the total file which has the activity name instead of activi
 melt the total dataset to melted dataset based on activity~subject 
 cast the melted dataset to shape as required with mean function on the 79 features 
 this produces 30 subject * 6 activity to produce 180 rows and 79 features 
-
-
-
-
-
-
-selected only 79 features by mean and std as requested in the final tidy dataset
 
 
 
